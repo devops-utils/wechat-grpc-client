@@ -109,7 +109,7 @@ func QrcodeLogin(wxUser, username string, password string) (*pb.WechatMsg, error
 	requestProto := client_system.CreateWechatMsg(CmdLoginQrcode, []byte(`{
 		"Username":   "`+username+`",
 		"Password":   "`+password+`",
-		"UUid":       "`+strings.ToUpper(fmt.Sprintf("%s", uuid.Must(uuid.NewV4())))+`",
+		"UUid":       "`+strings.ToUpper(fmt.Sprintf("%s", uuid.Must(uuid.NewV4(), nil)))+`",
 		"DeviceType": "`+createDeviceType()+`",
 		"DeviceName": "`+createDeivceName()+`",
 		"ProtocolVer": 1
@@ -155,7 +155,7 @@ func UsernameLogin(wxUser string, username string, password string, deviceId str
 	requestProto := client_system.CreateWechatMsg(CmdUsernameLogin, []byte(`{
 		"Username":   "`+username+`",
 		"Password":   "`+password+`",
-		"UUid":       "`+strings.ToUpper(fmt.Sprintf("%s", uuid.Must(uuid.NewV4())))+`",
+		"UUid":       "`+strings.ToUpper(fmt.Sprintf("%s", uuid.Must(uuid.NewV4(), nil)))+`",
 		"DeviceType": "`+createDeviceType()+`",
 		"DeviceName": "`+createDeivceName()+`",
 		"ProtocolVer": 1
@@ -204,7 +204,7 @@ func AutoLogin(wxUser string) (*pb.WechatMsg, error) {
 		return nil, errors.New("获取微信实例缓存信息失败了,error：" + err.Error())
 	}
 	requestProto := client_system.CreateWechatMsg(CmdAutoLogin, []byte(`{
-		"UUid":       "`+strings.ToUpper(fmt.Sprintf("%s", uuid.Must(uuid.NewV4())))+`",
+		"UUid":       "`+strings.ToUpper(fmt.Sprintf("%s", uuid.Must(uuid.NewV4(), nil)))+`",
 		"DeviceType": "`+createDeviceType()+`",
 		"DeviceName": "`+createDeivceName()+`",
 		"ProtocolVer": 1
