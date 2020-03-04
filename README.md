@@ -21,9 +21,6 @@
 ### 作者微信
  <img src="https://user-images.githubusercontent.com/15431129/60790819-f0e0b200-a194-11e9-9565-5f6f42dec26c.jpg" width = "150" height = "150" alt="周先生" align=center />
  
-### Mac、ipad协议接口作者
- <img src="https://wkgjtest.oss-cn-beijing.aliyuncs.com/images/20191008/7c68ad4ddecb3c8b63d37dcad17f2aa3.png" width = "150" height = "150" alt="atdown" align=center />
-
 ### 赞助微信
 <img src="https://user-images.githubusercontent.com/15431129/60791074-79f7e900-a195-11e9-85ff-f6647482b0a4.jpg" width = "151" height = "217" alt="微信" align=center />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://user-images.githubusercontent.com/15431129/60791166-a6136a00-a195-11e9-92c7-f64fa9c28d79.jpg" width = "141" height = "234" alt="支付宝" align=center />
 
