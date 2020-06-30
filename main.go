@@ -7,13 +7,13 @@ import (
 )
 
 func main() {
-	go client.QuickUsernameLogin("mr.zhou", "libgjie123", "lingjie123", "", func(wxUser string, ret *pb.WechatMsg) {
+	/*go client.QuickUsernameLogin("mr.zhang", "brave", "brave", "", func(wxUser string, ret *pb.WechatMsg) {
 		loginSuccess(wxUser, ret.BaseMsg.User.Nickname)
-	})
+	})*/
 
-	//go client.QuickQrcodeLogin("mr.zhou", "", func(wxUser string, ret *pb.WechatMsg) {
-	//	loginSuccess(wxUser, ret.BaseMsg.User.Nickname)
-	//})
+	go client.QuickQrcodeLogin("mr.king", "", func(wxUser string, ret *pb.WechatMsg) {
+	    loginSuccess(wxUser, ret.BaseMsg.User.Nickname)
+	})
 
 	select {}
 }
